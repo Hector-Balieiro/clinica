@@ -1,0 +1,266 @@
+*{
+    font-family:'Source sans pro',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+@font-face {
+    font-family:'Source Sans pro', ;
+    src: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+}
+
+.inicio{
+    width: 100%;
+    background-color: rgb(9, 212, 212);
+    display: flex;
+    
+    
+    
+}
+
+.cabecalho{
+    max-width: 1024px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cabecalho-link a{
+    color: rgb(255, 255, 255);
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+
+nav{
+    display: flex;
+    width: 300px;
+    height: 60px;
+    
+    
+   
+    
+
+}
+.cabecalho-link a:hover{
+    color: black;
+}
+
+.cabecalho-logo{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.especialidade{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidade nav{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    word-spacing: 50px;
+    
+
+}
+
+nav a{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: gray;
+    
+    
+}
+
+nav p{
+    border-bottom: 2px solid rgb(9, 212, 212);
+}
+.card-img img{
+    height: 255px;
+    width: 350px;
+    display: flex;
+
+}
+
+.title h1{
+    
+    text-align: center;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: grey ;
+}
+
+.card-text{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.card-text p{
+    width: 50%;
+    margin-top: 15px;
+    color: rgb(158, 157, 157);
+}
+
+h3{
+    font-weight: bolder;
+}
+
+.card{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    
+
+}
+
+thead{
+   
+    text-align: left;
+    
+    height: 60px;
+}
+
+.card-table{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th{
+    color: white;
+    background-color: rgb(9, 212, 212);
+    padding-left: 13px;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 78, 63);
+    margin-top: 80px;
+}
+
+.rodape-texto p{
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+tr:nth-of-type(2n+1){
+    background-color: rgb(194, 190, 190);
+}
+
+tr:not(:nth-of-type(2n+1)){
+    background-color:rgb(233, 231, 231)
+}
+
+td{
+    padding-left: 10px;
+}
+
+
+@media (max-width:540px){
+    .especialidade nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 30px;
+
+    }
+
+    .card-img img{
+        display: none;
+    }
+
+    .card-table{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-text{
+        
+        width: 700px;
+        text-align: center;
+    }
+
+     
+        .cabecalho{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .cabecalho-link{
+            width: 100%;
+            border:1px solid rgb(9, 212, 212);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cabecalho-logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+
+@media (min-width:541px) and (max-width:768px){
+    .card-img img{
+        display: none;
+    }
+
+    .card-table{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-table{
+        height: 200px;
+    }
+}
