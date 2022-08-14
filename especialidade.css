@@ -200,7 +200,7 @@ td{
 }
 
 
-@media (max-width:540px){
+@media (max-width:430px){
     .especialidade nav{
         display: flex;
         flex-wrap: wrap;
@@ -250,7 +250,7 @@ td{
 }
 
 
-@media (min-width:541px) and (max-width:768px){
+@media (min-width:431px) and (max-width:768px){
     .card-img img{
         display: none;
     }
